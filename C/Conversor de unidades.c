@@ -1,5 +1,3 @@
-// Angelo Vera Pawling - S19009354 - Conversor de unidades
-
 #include <stdio.h>
 #include <conio.h>
 #include <iostream.h>
