@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_padding"
+            app:cardCornerRadius="@dimen/radio_size_img"
+            app:cardElevation="@dimen/card_elevation">
+
+            <ImageView
+                android:id="@+id/profile_mainview_profilepicture"
+                android:layout_width="@dimen/size_image"
+                android:layout_height="@dimen/size_image"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/feminine_img_avatar" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:text="@string/text_nombre" />
+
+        <TextView
+            android:id="@+id/profile_mainview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_md"
+            tools:text="Nombre" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:text="@string/text_correo" />
+
+        <TextView
+            android:id="@+id/profile_mainview_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="email"
+            android:linksClickable="false"
+            android:textColorLink="@color/black"
+            android:textSize="@dimen/text_size_md"
+            android:textStyle="italic|bold"
+            tools:text="correo@mail.com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:text="@string/text_sitio_web" />
+
+        <TextView
+            android:id="@+id/profile_mainview_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="false"
+            android:textColorLink="#00796B"
+            android:textSize="@dimen/text_size_md"
+            android:textStyle="italic|bold"
+            tools:text="www.sitioweb.org" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:text="@string/text_phone" />
+
+        <TextView
+            android:id="@+id/profile_mainview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:linksClickable="false"
+            android:textColorLink="#009688"
+            android:textSize="@dimen/text_size_md"
+            android:textStyle="italic|bold"
+            tools:text="+52 22 90 90 90 90" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:text="@string/text_location" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_mainview_show_GoogleMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:clickable="true"
+            android:drawableEnd="@drawable/icon_map"
+            android:drawablePadding="5dp"
+            android:text="@string/text_show_location"
+            android:textSize="@dimen/text_size_md" />
+    </LinearLayout>
+
+</ScrollView>
