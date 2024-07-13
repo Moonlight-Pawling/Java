@@ -1,7 +1,3 @@
-/*
-Angelo Vera Pawling - S19009354
-Actividad calculadora mejorada - Introduccion a la programacion
-*/
 #include <stdio.h>
 #include <conio.h>
 #include <iostream>
