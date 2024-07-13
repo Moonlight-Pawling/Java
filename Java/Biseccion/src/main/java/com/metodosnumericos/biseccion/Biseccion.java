@@ -71,6 +71,7 @@ public class Biseccion {
     }
     
     static double sustituirfuncion(double f) {
+        //This function can be replaced with other function and must be specified at the start of this program;
         return 2*f+0.5*f-40;
     }
 }
